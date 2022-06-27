@@ -358,6 +358,46 @@
             75%  { opacity: 0.8;}
             100% {width:320px; height: 200px;opacity: 1; transform: rotateY(360deg);}
           }
+        .main2> h2{
+            visibility: hidden;
+            display: none;
+        } 
+        .main2{
+            display: flex;
+            flex-direction: column;
+            height: 1800px;
+        }
+        .main2>.left2{
+            width: 100%;
+            height: 350px;
+            margin-top: 400px;
+            display: grid;
+            grid-template-columns: 100% 100% 100%;
+            grid-template-rows: 400px;
+            overflow-x: scroll;
+        }
+        .left2> .disimg{
+            justify-content: center;
+            width: 100%;
+            height: 300px;
+        }
+        .main2>.right2{
+            width: 100%;
+            height: 400px;
+            display: block;
+        }
+        .right2 > h1{
+            color: black;
+            font-size: 50px;
+        }
+        .right2 > h1 > span{
+            color: red;
+            font-size:50px;
+        }
+        .right2 > p{
+            font-size: 25px;
+        }
+                
 
         }
 
@@ -402,11 +442,6 @@
     </div>
     <div class="main2">
         <h2>Scroll Right &#8594;</h2>
-        <div class="left2">
-            <img class="disimg" src="dis.png" alt="image">
-            <img class="disimg" src="dis2.png" alt="image" >
-            <img class="disimg" src="dis3.png" alt="image" >
-        </div>
         <div class="right2">
             <h1>The Simplicity <br> <span>Really ,How?</span></h1>
             <p> <em>MY favorite part.</em> This app contains a number of fun tools
@@ -415,6 +450,11 @@
             acounts and soca media , Also comes with an in built database do you never forget
             your passwords again, So try it out.  
             </p>
+        </div>
+        <div class="left2">
+            <img class="disimg" src="dis.png" alt="image">
+            <img class="disimg" src="dis2.png" alt="image" >
+            <img class="disimg" src="dis3.png" alt="image" >
         </div>
     </div>
 </body>
