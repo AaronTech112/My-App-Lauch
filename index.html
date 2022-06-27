@@ -211,6 +211,23 @@
         .imghead{
             height: 500px;
         }
+        .available{
+            width: 32%;
+        }
+    .card{
+        opacity: 1;
+        left: 43px;
+        animation-name: cardanime;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+    }
+    @keyframes cardanime {
+            0%   { left: -600px; opacity: 0.2;}
+            25%  {opacity: 0.4;}
+            50%  { opacity: 0.6;}
+            75%  { opacity: 0.8;}
+            100% { left: 50px; opacity: 1;}
+          }
 
     }
 
