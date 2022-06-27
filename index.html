@@ -52,7 +52,18 @@
         box-shadow: 2px 2px 2px 2px black;
         transition: 1s;
         overflow: hidden;
+        animation-name: cardanime;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
     }
+    @keyframes cardanime {
+            0%   { left: -600px; opacity: 0.2;}
+            25%  {opacity: 0.4;}
+            50%  { opacity: 0.6;}
+            75%  { opacity: 0.8;}
+            100% { left: 50px; opacity: 1;}
+          }
+
     .card:hover{
         opacity: 1;
         cursor: pointer;
@@ -198,43 +209,9 @@
             top: 1px;
         }
         .imghead{
-            height: 400px;
+            height: 500px;
         }
-        .card>.cardhead{
-            font-size: 2vw;
-            margin-top: 45px;
-        } 
-        .card>.cardtext2{
-            font-size: 2vw;
-        } 
-        .card>.cardtext3{
-            font-size:2vw;
-        } 
-        .card>.download{
-            font-size: 12px;
-            background-color: green;
-            display: flex;
-            text-align: center;
-            padding-top: 10px; 
-        }     
-        .card{
-            display: block;
-            margin-top: 360px;
-            width: 200px;
-            height: 200px;
-            margin-left: -25px;
-            opacity: 1;
-            animation-name: cardanime;
-            animation-duration: 2s;
-            animation-iteration-count: 2;
-        }
-        @keyframes cardanime {
-            0%   { margin-left: -1000px; opacity: 0.2;}
-            25%  {margin-left: -700px;opacity: 0.4;}
-            50%  { opacity: 0.6;}
-            75%  { opacity: 0.8;}
-            100% { margin-left: -30px; opacity: 1;}
-          }
+
     }
 
 </style>
