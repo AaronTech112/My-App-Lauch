@@ -48,7 +48,7 @@
         width: 33%;
         top: 100px;
         left: 50px;
-        height: 40%;
+        height: 300px;
         box-shadow: 2px 2px 2px 2px black;
         transition: 1s;
         overflow: hidden;
@@ -216,7 +216,7 @@
         }
     .card{
         opacity: 1;
-        left: 43px;
+        left: 40px;
         animation-name: cardanime;
         animation-duration: 2s;
         animation-iteration-count: 2;
@@ -228,6 +228,38 @@
             75%  { opacity: 0.8;}
             100% { left: 50px; opacity: 1;}
           }
+    .left{
+        width: 60%;
+        float: left;
+        margin-left: 10px;
+    }
+    .left> h1{
+        color: black;
+    }
+    .left > br{
+        color: green;
+    }
+    .left>p{
+        display: flex;
+        justify-content: center;
+    }
+
+    .right{
+        width: 40%;
+        float: right;
+        height: 300px;
+    }
+    .right > img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+        box-shadow: 0px 3px 0px 0px black ;
+    }
+    .left>p{
+        font-size: 15px;
+    }
 
     }
 
