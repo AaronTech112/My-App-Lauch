@@ -79,6 +79,7 @@
         justify-content: center;
         left:10%;
         bottom: 0px;
+        padding-top: 10px; 
     }
     .card>.download{
         background-color:lightgreen;
@@ -200,14 +201,14 @@
             height: 400px;
         }
         .card>.cardhead{
-            font-size: 18px;
+            font-size: 2vw;
             margin-top: 45px;
         } 
         .card>.cardtext2{
-            font-size: 15px;
+            font-size: 2vw;
         } 
         .card>.cardtext3{
-            font-size: 12px;
+            font-size:2vw;
         } 
         .card>.download{
             font-size: 12px;
@@ -221,7 +222,7 @@
             margin-top: 360px;
             width: 200px;
             height: 200px;
-            margin-left: -30px;
+            margin-left: -25px;
             opacity: 1;
             animation-name: cardanime;
             animation-duration: 2s;
@@ -230,8 +231,8 @@
         @keyframes cardanime {
             0%   { margin-left: -1000px; opacity: 0.2;}
             25%  {margin-left: -700px;opacity: 0.4;}
-            50%  { margin-left: -400px;opacity: 0.6;}
-            75%  { margin-left: -100px;opacity: 0.8;}
+            50%  { opacity: 0.6;}
+            75%  { opacity: 0.8;}
             100% { margin-left: -30px; opacity: 1;}
           }
     }
