@@ -209,62 +209,70 @@
             top: 1px;
         }
         .imghead{
-            height: 500px;
+            height: 350px;
         }
         .available{
             width: 32%;
         }
-    .card{
-        opacity: 1;
-        left: 40px;
-        height: 250px;
-        animation-name: cardanime;
-        animation-duration: 2s;
-        animation-iteration-count: 2;
-    }
-    @keyframes cardanime {
-            0%   { left: -600px; opacity: 0.2;}
-            25%  {opacity: 0.4;}
-            50%  { opacity: 0.6;}
-            75%  { opacity: 0.8;}
-            100% { left: 50px; opacity: 1;}
-          }
-    .left{
-        width: 60%;
-        float: left;
-        margin-left: 10px;
-    }
-    .left> h1{
-        color: black;
-        font-size: 23px;
-    }
-    .left > br{
-        color: green;
-    }
-    .left>p{
-        display: flex;
-        justify-content: center;
-    }
+        .card{
+            opacity: 1;
+            left: 40px;
+            height: 100px;
+            animation-name: cardanime;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+        }
+        .card>.download{
+            background-color: green;
+            text-align: center;
+            position: absolute;
+            bottom: 5px;
+            height: 25px;
+            padding-top: 7px;
+        }
+        @keyframes cardanime {
+                0%   { left: -600px; opacity: 0.2;}
+                25%  {opacity: 0.4;}
+                50%  { opacity: 0.6;}
+                75%  { opacity: 0.8;}
+                100% { left: 40px; opacity: 1;}
+            }
+        .left{
+            width: 60%;
+            float: left;
+            margin-left: 10px;
+        }
+        .left> h1{
+            color: black;
+            font-size: 23px;
+        }
+        .left > br{
+            color: green;
+        }
+        .left>p{
+            display: flex;
+            justify-content: center;
+        }
 
-    .right{
-        width: 40%;
-        float: right;
-        padding-top: 200px;
-        height: 210px;
-    }
-    .right > img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        width: 100%;
-        box-shadow: 0px 3px 0px 0px black ;
-    }
-    .left>p{
-        font-size: 15px;
-    }
+        .right{
+            width: 40%;
+            float: right;
+            padding-top: 200px;
+            height: 210px;
+        }
+        .right > img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 100%;
+            box-shadow: 0px 3px 0px 0px black ;
+        }
+        .left>p{
+            font-size: 15px;
+        }
 
-    }
+        }
 
 </style>
 
