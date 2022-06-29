@@ -453,10 +453,18 @@
         cursor: pointer;
     }
     footer{
-        background-color: aquamarine;
+        background-color: rgb(207, 207, 207);
         color: black;
         height: 200px;
         width: 100%;
+        gap: 7px;
+        padding-top: 85px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .power:hover{
+        cursor: pointer;
     }
     
     @media screen and (max-width:700px){
@@ -646,7 +654,7 @@
             flex-direction: column;
             padding-left: 10px;
             padding-right: 10px;
-            height: 1000px;
+            height: 150px;
             padding-top: 20px;
             gap: 30px;
             justify-content: center;
@@ -787,6 +795,13 @@
             <div class="pleftdownload"> <button>Download</button> </div>
         </div>
     </div>
-    <footer></footer>
+    <footer>
+        <i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
+        <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
+        <a href="https://twitter.com/aaron_techbro"> <i class="fa-brands fa-twitter" style="font-size: 30px;"></i></a>
+        <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+        <i class="fa-brands fa-whatsapp" style="font-size: 30px;"></i>
+        <div class="power" style="text-decoration: underline; margin-top: 8px;" >Powered by AaronTech</div>
+    </footer>
 </body>
 </html>
