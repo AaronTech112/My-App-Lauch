@@ -300,7 +300,136 @@
         justify-content: center;
         text-align: center;
     }
-
+    .mid{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .mid>h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mid>h2{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .price{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 500px;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .price>.pleft{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 45%;
+        height: 500px;
+        margin-left: 15px;
+        box-shadow: 2px 2px 2px 2px  rgb(129, 129, 129);
+    }
+    .price>.pleft:hover{
+        box-shadow: 4px 4px 4px 4px rgb(161, 161, 161);
+        cursor: pointer;
+    }
+    
+    .price>.pright{
+        display: flex;
+        flex-direction: column;
+        float: right;
+        width: 45%;
+        height: 500px;
+        box-shadow: 2px 2px 2px 2px  rgb(129, 129, 129);
+    }
+    .price>.pright:hover{
+        box-shadow: 4px 4px 4px 4px rgb(161, 161, 161);
+        cursor: pointer;
+    }
+    .pleft > .plefthead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-color: black;
+        color: aliceblue;
+        background-color: rgb(131, 131, 131);
+        border-width: 0.5px;
+        width: 100%;
+        height: 120px;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    .pright > .prighthead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-color: black;
+        color: aliceblue;
+        background-color: blue;
+        border-width: 0.5px;
+        width: 100%;
+        height: 120px;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    .pleftitems{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        font-size: 20px;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        border-bottom-width: 0.5px;
+    }
+    .pleftprice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        border-bottom-width: 0.5px;
+        font-size: 35px;
+        opacity: 0.5;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .pleftdownload{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        border-bottom-width: 0.5px; 
+        background-color: rgb(233, 233, 233);       
+    }
+    .pleftdownload> button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 40px;
+        width: 200px;      
+    }
+    .pleftdownload>button:hover{
+        background-color: rgb(235, 235, 235);
+        color: black;
+        cursor: pointer;
+    }
     
     @media screen and (max-width:700px){
         .head{
@@ -559,6 +688,28 @@
             <i class="fa-solid fa-wifi" style="color: brown;  font-size:80px; display: block;"><h3 style="font-size: 15px; display: block; color: aliceblue;">Offline Mode</h3></i>
             <i class="fa-solid fa-bullseye fa-beat-fade" style="color: pink;  font-size:80px; display: block;"><h3 style="font-size: 15px; display: block; color: aliceblue;">Accurate</h3></i>
             <i class="fa-solid fa-toolbox" style="color: blue;  font-size:80px; display: block;"><h3 style="font-size: 15px; display: block; color: aliceblue;">Tech Tools</h3></i>
+        </div>
+    </div>
+    <div class="mid">
+        <h1>Pricing</h1>
+        <h2>Choose A Preorder Plan That Fits Your Need</h2>
+    </div>
+    <div class="price">
+        <div class="pleft">
+            <div class="plefthead"> Basic</div>
+            <div class="pleftitems"><span>24 Hours</span> -Support  </div>
+            <div class="pleftitems"><span>10</span>-Freatures</div>
+            <div class="pleftitems"><span>No </span> -Ads </div>
+            <div class="pleftprice"> $ 1.99 </div>
+            <div class="pleftdownload"> <button>Download</button> </div>
+        </div>
+        <div class="pright">
+            <div class="prighthead"> Premium</div>
+            <div class="pleftitems"><span>24 Hours</span> -Support  </div>
+            <div class="pleftitems"><span>10</span>-Freatures</div>
+            <div class="pleftitems"><span>No </span> -Ads </div>
+            <div class="pleftprice"> $ 1.99 </div>
+            <div class="pleftdownload"> <button>Download</button> </div>
         </div>
     </div>
 </body>
